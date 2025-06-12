@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -8,6 +8,21 @@ import guy from '/images/guy.png'
 
 
 const Home = () => {
+
+  const videosLinks = [
+    "https://www.youtube.com/embed/ylSgtdsnIWA?si=ysRoS3lequJPSNB_&loop=1&playlist=ylSgtdsnIWA&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/XvcorjKNG2Q?si=P46OlZQG2V4KvpQO&loop=1&playlist=XvcorjKNG2Q",
+    "https://www.youtube.com/embed/nXS9XybnABc?si=zlggYEMT38KUV3V3&loop=1&playlist=nXS9XybnABc",
+    "https://www.youtube.com/embed/1PfcUQz4_hM?si=-nhIdQecF6-NpAz3&loop=1&playlist=1PfcUQz4_hM"
+  ]
+
+  const shortsLinks = [
+    "https://www.youtube.com/embed/IWPff5ZRGWc?si=L4T75lOPnxt36dwx&amp;controls=0&loop=1&playlist=IWPff5ZRGWc&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/DD_ES-0IaSc?si=9IP52dHjAtEsQ0mO&amp;controls=0&loop=1&playlist=DD_ES-0IaSc",
+    "https://www.youtube.com/embed/87GoWs64EJs?si=_PNrw7RhHpXN6EFY&amp;controls=0&loop=1&playlist=87GoWs64EJs",
+    "https://www.youtube.com/embed/yI3AtASdy2E?si=stUERTCCrfzSUy6G&amp;controls=0&loop=1&playlist=yI3AtASdy2E"
+  ]
+
 
   return (
     <>
@@ -21,11 +36,10 @@ const Home = () => {
           >
             <div className="absolute h-full w-full flex items-center justify-center">
               {/* Name Logo */}
-              <div className="absolute md:h-auto h-[60%] md:top-auto top-0 w-full md:w-[90%] xl:px-0 lg:px-20 md:px-12 sm:px-20 px-6 flex items-center justify-center z-10 place-self-center lg-logo-translate">
+              <div className="absolute xl:h-[80%] md:h-auto h-[60%] md:top-auto top-0 w-full md:w-[90%] xl:px-0 lg:px-20 md:px-12 sm:px-20 px-6 flex items-center justify-center z-10 place-self-center lg-logo-translate">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="1118"
-                  height="437"
+                  height="100%"
                   fill="none"
                   viewBox="0 0 1218 437"
                 >
@@ -81,19 +95,11 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Camera Info */}
+            {/* -- Camera Info -- */}
             <div className="relative h-[80%]"></div>
             <div className="h-[20%] pb-0 relative">
               <div className="absolute h-20 w-full bg-gradient-to-t from-[#000000cf] via-[#00000092] bottom-0 flex items-center z-20 justify-center cam-info-translate">
-                <p
-                  style={{
-                    letterSpacing: "0.2em",
-                    fontFamily: "montserrat, sans-serif",
-                  }}
-                  className="text-[#ffffff4c] text-lg font-thin"
-                >
-                  SHOT ON <span className="font-semibold">SONY A7IV</span>
-                </p>
+
               </div>
             </div>
           </div>
@@ -110,7 +116,7 @@ const Home = () => {
               fontWeight: 900,
               WebkitTextStroke: "2px white",
             }}
-            className="text-white text-5xl"
+            className="text-white text-5xl xl:text-8xl xl:w-[40%] text-center"
           >
             MY WORK
           </h2>
@@ -118,21 +124,38 @@ const Home = () => {
           <div className="w-full flex flex-col items-center gap-16">
             {/* Videos Grid */}
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full xl:px-24 md:px-8 sm:px-6 px-4 gap-5">
-              {[...Array(6)].map((_, i) => (
-                <div
-                  key={`video-${i}`}
-                  className="aspect-[16/9] rounded bg-zinc-900 border border-zinc-600"
-                />
+              {videosLinks.map((link, index) => (
+                <div key={`video-${index}`} className="aspect-[16/9] rounded bg-zinc-900 border border-zinc-600">
+                  <iframe
+                  width="100%"
+                  src= {link}
+                  title="YouTube video player"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen
+                  className="aspect-[16/9] rounded"></iframe>
+                </div>
               ))}
             </div>
+            
             <line className=" w-full h-[1px] bg-gradient-to-l from-black via-zinc-500 to-black"></line>
             {/* Reels Grid */}
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 w-full xl:px-24 md:px-8 sm:px-6 px-4">  
-              {[...Array(4)].map((_, i) => (
+              {shortsLinks.map((link, index) => (
                 <div
-                  key={`reel-${i}`}
-                  className="aspect-[9/16] rounded bg-zinc-900 border border-zinc-600"
-                />
+                  key={`reel-${index}`}
+                  className="aspect-[9/16] rounded bg-zinc-900 border border-zinc-600">
+                      <iframe
+                      width="100%"
+                      src= {link}
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" 
+                      allowfullscreen
+                      className="aspect-[9/16] rounded"></iframe>
+                  </div>
               ))}
             </div>
           </div>
