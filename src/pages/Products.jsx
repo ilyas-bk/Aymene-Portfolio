@@ -34,7 +34,7 @@ function Products() {
       <Header />
       <main className="relative mt-20">
         <section className="h-auto w-full lg:px-24 px-6 flex flex-col pt-10 pb-20">
-          <h2 className="text-5xl h-1/5 font-black flex items-center justify-center py-10 xl:text-8xl text-center">
+          <h2 className="text-5xl h-1/5 font-black flex items-center justify-center py-10 xl:text-6xl text-center">
             LENS STICKERS
           </h2>
           <div className="h-4/5 grid grid-cols-1 md:grid-cols-2 gap-14">

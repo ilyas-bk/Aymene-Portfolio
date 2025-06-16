@@ -20,7 +20,7 @@ function Graphicsfolio() {
               fontWeight: 900,
               WebkitTextStroke: "2px white",
             }}
-            className="text-white text-5xl xl:text-8xl border xl:w-[40%] text-center"
+            className="text-white text-5xl xl:text-6xl xl:w-[40%] text-center"
           >
             GRAPHICS FOLIO
           </h2>

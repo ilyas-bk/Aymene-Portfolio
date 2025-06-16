@@ -1257,16 +1257,8 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:h-\[80\%\] {
-    height: 80%;
-  }
-
-  .xl\:w-\[20\%\] {
-    width: 20%;
-  }
-
-  .xl\:w-\[30\%\] {
-    width: 30%;
+  .xl\:h-\[50\%\] {
+    height: 50%;
   }
 
   .xl\:w-\[40\%\] {
@@ -1292,18 +1284,13 @@ video {
     padding-right: 12rem;
   }
 
-  .xl\:text-9xl {
-    font-size: 8rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }

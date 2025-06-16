@@ -1,6 +1,6 @@
 import React from "react";
 
-import formDeco from '/images/form-deco.png'
+import formDeco from '/images/form-deco.webp'
 
 function Contact() {
   return (

@@ -3,21 +3,24 @@ import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-import heroBg from '/images/hero-bg.png';
-import guy from '/images/guy.png'
+import heroBg from '/images/hero-bg.webp';
+import guy from '/images/guy.webp'
 
 
 const Home = () => {
 
   const videosLinks = [
-    "https://www.youtube.com/embed/ylSgtdsnIWA?si=ysRoS3lequJPSNB_&loop=1&playlist=ylSgtdsnIWA&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/ylSgtdsnIWA?si=ysRoS3lequJPSNB_&loop=1&playlist=ylSgtdsnIWA",
     "https://www.youtube.com/embed/XvcorjKNG2Q?si=P46OlZQG2V4KvpQO&loop=1&playlist=XvcorjKNG2Q",
     "https://www.youtube.com/embed/nXS9XybnABc?si=zlggYEMT38KUV3V3&loop=1&playlist=nXS9XybnABc",
-    "https://www.youtube.com/embed/1PfcUQz4_hM?si=-nhIdQecF6-NpAz3&loop=1&playlist=1PfcUQz4_hM"
+    "https://www.youtube.com/embed/1PfcUQz4_hM?si=-nhIdQecF6-NpAz3&loop=1&playlist=1PfcUQz4_hM",
+    "https://www.youtube.com/embed/CGbtKisZZbU?si=NUNN_DK2yshC1WvE&loop=1&playlist=CGbtKisZZbU",
+    "https://www.youtube.com/embed/7UY_nztdLww?si=brwvlAQrNC_quQcI&loop=1&playlist=7UY_nztdLww"
+    
   ]
 
   const shortsLinks = [
-    "https://www.youtube.com/embed/IWPff5ZRGWc?si=L4T75lOPnxt36dwx&amp;controls=0&loop=1&playlist=IWPff5ZRGWc&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/IWPff5ZRGWc?si=L4T75lOPnxt36dwx&amp;controls=0&loop=1&playlist=IWPff5ZRGWc",
     "https://www.youtube.com/embed/DD_ES-0IaSc?si=9IP52dHjAtEsQ0mO&amp;controls=0&loop=1&playlist=DD_ES-0IaSc",
     "https://www.youtube.com/embed/87GoWs64EJs?si=_PNrw7RhHpXN6EFY&amp;controls=0&loop=1&playlist=87GoWs64EJs",
     "https://www.youtube.com/embed/yI3AtASdy2E?si=stUERTCCrfzSUy6G&amp;controls=0&loop=1&playlist=yI3AtASdy2E"
@@ -36,7 +39,7 @@ const Home = () => {
           >
             <div className="absolute h-full w-full flex items-center justify-center">
               {/* Name Logo */}
-              <div className="absolute xl:h-[80%] md:h-auto h-[60%] md:top-auto top-0 w-full md:w-[90%] xl:px-0 lg:px-20 md:px-12 sm:px-20 px-6 flex items-center justify-center z-10 place-self-center lg-logo-translate">
+              <div className="absolute xl:h-[50%] md:h-auto h-[60%] md:top-auto top-0 w-full md:w-[90%] xl:px-0 lg:px-20 md:px-12 sm:px-20 px-6 flex items-center justify-center z-10 place-self-center lg-logo-translate">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="100%"
@@ -116,7 +119,7 @@ const Home = () => {
               fontWeight: 900,
               WebkitTextStroke: "2px white",
             }}
-            className="text-white text-5xl xl:text-8xl xl:w-[40%] text-center"
+            className="text-white text-5xl xl:text-6xl xl:w-[40%] text-center"
           >
             MY WORK
           </h2>
