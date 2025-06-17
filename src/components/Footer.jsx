@@ -19,17 +19,23 @@ function Footer() {
         </ul>
       </div>
       <div className="w-full flex justify-end py-2">
-        <ul className="w-60 h-full flex items-center justify-between">
+        <ul className="h-full flex items-center  gap-8">
           {/* Social Icons */}
           <li>
-            <a className="cursor-pointer" href="https://www.youtube.com/@aymene.berdane_LP" target="_blank">
-              {/* Youtube SVG */}
+            <a
+              className="cursor-pointer px-4"
+              href="https://www.linkedin.com/in/aymene-berdane-004729216/"
+              target="_blank"
+            >
+              {/* LinkedIN SVG */}
               <svg
                 fill="#ffffff"
                 height="40"
                 width="40"
+                version="1.1"
+                id="Layer_1"
                 viewBox="-143 145 512 512"
-              
+                stroke="#ffffff"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -38,44 +44,18 @@ function Footer() {
                   stroke-linejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
-                  <g>
-                    <polygon points="78.9,450.3 162.7,401.1 78.9,351.9 "></polygon>
-                    <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8 c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1 V446.8z"></path>
-                  </g>
+                  {" "}
+                  <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path>{" "}
                 </g>
               </svg>
             </a>
           </li>
           <li>
-            <a className="cursor-pointer" href="https://x.com/Lava_Pinguin" target="_blank">
-              {/* X SVG */}
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#000000"
-                height="40"
-                width="40"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <g fill="none" fill-rule="evenodd">
-                    <path d="m0 0h32v32h-32z"></path>
-                    <path
-                      d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm2.8844392 10c-.8155312-.00039875-1.5977768.3185138-2.1744446.8864965s-.9004568 1.338447-.9000516 2.1416957c0 .2345571.0290047.4683624.0763281.693898-2.4735114-.1243416-4.777484-1.275917-6.33981273-3.1687757-.26638508.4495677-.41827803.9652925-.41827803 1.5276281-.0010649 1.0136875.51366356 1.9604572 1.37085286 2.5214884-.50376554-.0187946-.97928966-.1593785-1.3891716-.3841624v.0375893c-.00205712 1.4426342 1.0296751 2.6862915 2.4653979 2.971808-.2572257.0654053-.5342967.1029946-.8098412.1029946-.1999797 0-.3907999-.0187947-.5808569-.0466107.404934 1.2327897 1.5599819 2.0762891 2.8752798 2.0997368-1.0887093.841353-2.4333459 1.2971153-3.81716869 1.2938228-.25722574 0-.49536944-.0097732-.74267251-.0375893 1.36169346.8630497 2.9798494 1.3599799 4.7216568 1.3599799 5.6536231 0 8.7472013-4.6129556 8.7472013-8.6162132 0-.1308107 0-.2616214-.0099226-.3931838.5995743-.4327694 1.1205962-.9622114 1.5410645-1.5659692-.5629708.2424151-1.1595866.4005355-1.7700488.4691142.6417355-.3758146 1.1223374-.9691898 1.3517708-1.6689638-.6025782.3529048-1.2626416.6003888-1.9509465.7314873-.5617749-.5909034-1.3609302-.9562715-2.2463363-.9562715z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a className="cursor-pointer" href="https://www.instagram.com/aymene.berdane/" target="_blank">
+            <a
+              className="cursor-pointer"
+              href="https://www.instagram.com/aymen.berdane/"
+              target="_blank"
+            >
               {/* Instagram SVG */}
               <svg
                 viewBox="4 4 40 40"
@@ -83,7 +63,6 @@ function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
                 height="40"
                 width="40"
-              
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
@@ -103,35 +82,6 @@ function Footer() {
                   ></path>
                   <path
                     d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z"
-                    fill="black"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a className="cursor-pointer" href="https://web.facebook.com/profile.php?id=100090436246788" target="_blank">
-              {/* Facebook SVG */}
-              <svg
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  
-                  <circle cx="24" cy="24" r="24" fill="#ffffff"></circle>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z"
                     fill="black"
                   ></path>
                 </g>
