@@ -45,6 +45,7 @@ const Home = () => {
                   height="100%"
                   fill="none"
                   viewBox="0 0 1218 437"
+                  className="name-translate"
                 >
                   <path
                     fill="#fff"
