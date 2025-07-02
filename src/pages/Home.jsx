@@ -1,13 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 import heroBg from '/images/hero-bg.webp';
 import guy from '/images/guy.webp'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 const Home = () => {
+
+  //! On hold
+  // const tl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: "#hero",
+  //     start: "top top",
+  //     end: "bottom top",
+  //     scrub: true
+  //   }
+  // });
+
+  // gsap.utils.toArray(".name-translate").forEach(layer => {
+  //   // the variable depth define an array of the nested elements in the html
+  //   const depth = layer.dataset.depth;
+
+  //   const movement = -(layer.offsetHeight * depth)
+  //   tl.to(layer, {y: movement, ease: "none"}, 0)
+  // })
+
+  // const movement = -(layer.offsetHeight * depth)
+  // tl.to(layer, {y: movement, ease: "none"}, 0)
+
 
   const videosLinks = [
     "https://www.youtube.com/embed/ylSgtdsnIWA?si=ysRoS3lequJPSNB_&loop=1&playlist=ylSgtdsnIWA",
@@ -32,7 +58,7 @@ const Home = () => {
       <Header />
       <main className="relative">
         {/* Hero Section */}
-        <section id="hero" className="relative flex w-auto">
+        <section id="hero" className="relative flex w-auto parallax-container">
           <div
             className="relative bg-scroll min-w-[100vw] min-h-[100vh] md:min-h-screen bg-cover bg-center bg-no-repeat z-10 hero-translate"
             style={{ backgroundImage: `url(${heroBg})` }}
@@ -103,7 +129,6 @@ const Home = () => {
             <div className="relative h-[80%]"></div>
             <div className="h-[20%] pb-0 relative">
               <div className="absolute h-20 w-full bg-gradient-to-t from-[#000000cf] via-[#00000092] bottom-0 flex items-center z-20 justify-center cam-info-translate">
-
               </div>
             </div>
           </div>

@@ -28,7 +28,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="w-full aspect-[16/9] flex flex-col-reverse md:flex-row justify-center 2xl:gap-24 md:gap-8 sm:gap-4 gap-1 items-center 2xl:px-72 xl:px-48 lg:px-40 md:px-8 sm:px-6 px-4 2xl:py-28 md:py-16 py-10"
+      className="w-full aspect-[16/9] flex flex-col-reverse md:flex-row justify-center 2xl:gap-16 md:gap-8 sm:gap-4 gap-1 items-center 2xl:px-80 xl:px-48 lg:px-40 md:px-8 sm:px-6 px-4 2xl:py-28 md:py-16 py-10"
     >
       <div className="sm:h-full md:w-3/6 w-full flex flex-col md:gap-8 justify-end items-center">
         <div className="lg:h-1/5 md:h-2/5 h-full w-full flex flex-col justify-center items-center ">
@@ -47,6 +47,8 @@ function Contact() {
           onSubmit={sendEmail}
         >
           <div className="flex flex-col md:flex-row w-full gap-2">
+            
+          {/* <div className=" absolute w-full h-full bg-gray-50"> </div> */}
             <input
               type="text"
               placeholder="FULL NAME"
