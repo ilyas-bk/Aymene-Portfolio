@@ -42,7 +42,6 @@ const Home = () => {
     "https://www.youtube.com/embed/1PfcUQz4_hM?si=-nhIdQecF6-NpAz3&loop=1&playlist=1PfcUQz4_hM",
     "https://www.youtube.com/embed/CGbtKisZZbU?si=NUNN_DK2yshC1WvE&loop=1&playlist=CGbtKisZZbU",
     "https://www.youtube.com/embed/7UY_nztdLww?si=brwvlAQrNC_quQcI&loop=1&playlist=7UY_nztdLww"
-    
   ]
 
   const shortsLinks = [
